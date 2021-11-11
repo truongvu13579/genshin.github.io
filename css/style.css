@@ -1,0 +1,217 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.home-container {
+  width: 100%;
+  height: 100%;
+  min-width: 1280px;
+  position: relative;
+}
+.home-container .home-contain {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+.home-container .home-contain .bg-video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header {
+  background-color: rgba(17, 17, 17, 0.75);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-width: 1280px;
+  height: 70.55px;
+  transform: translateX(0);
+  display: block;
+  z-index: 999;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35);
+}
+.header .header__logo {
+  float: left;
+  margin-left: 24px;
+}
+.header .header__logo .audio-controller {
+  position: absolute;
+  cursor: pointer;
+  top: 20%;
+  left: 3%;
+}
+.header .header__logo .audio-controller img {
+  transform: scale(0.8);
+}
+.header .header__warp {
+  display: inline-block;
+  position: relative;
+  margin-left: -60px;
+}
+.header .header__warp .header__navbar {
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 10px;
+  margin-left: 40px;
+}
+.header .header__warp .header__navbar .header__navitem {
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  float: left;
+  width: auto;
+  height: 66px;
+  line-height: 66px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 15px !important;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  opacity: 0.75;
+}
+.header .header__warp .header__navbar .header__navitem:hover {
+  opacity: 1;
+  text-shadow: 2px 2px 8px #69e0ff;
+}
+.header .header__warp .header__navbar .header__navitem:nth-child(1) {
+  opacity: 1;
+  text-shadow: 2px 2px 8px #69e0ff;
+}
+.header .header__warp .header__navbar .header__navitem__more::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 88%;
+  width: 80px;
+  height: 50px;
+}
+.header .header__warp .header__navbar .header__navitem__more::after {
+  content: "";
+  display: block;
+  border-top: 5px solid #ccc;
+  border-left: 4.5px solid transparent;
+  border-right: 4.5px solid transparent;
+  margin-left: 9px;
+}
+.header .header__warp .header__navbar .header__navitem__more p {
+  margin: 0;
+}
+.header .header__warp .header__navbar .header__navitem__more .header__navitem__sublist {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  top: 70.55px;
+  left: -33px;
+  background: #272626;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+  border-radius: 1px;
+  pointer-events: none;
+  transform: translateY(-22px);
+  transform: opacity 250ms ease-in, translate 250ms ease-in;
+}
+.header .header__warp .header__navbar .header__navitem__more .header__navitem__sublist li {
+  list-style-type: none;
+  width: 214px;
+  height: 63px;
+  display: list-item;
+  text-align: left;
+  padding-left: 2rem;
+}
+.header .header__warp .header__navbar .header__navitem__more .header__navitem__sublist li a {
+  text-shadow: none;
+}
+.header .header__warp .header__navbar .header__navitem__more .header__navitem__sublist li:hover {
+  background: rgba(68, 67, 67, 0.75);
+  text-shadow: none;
+}
+.header .header__warp .header__navbar .header__navitem__more .header__navitem__sublist a {
+  text-decoration: none;
+  color: white;
+  font-family: inherit;
+}
+.header .header__warp .header__navbar .header__navitem__more:hover .header__navitem__sublist {
+  background: rgba(39, 38, 38, 0.9);
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+.header .header__warp .top_squre {
+  position: absolute;
+  z-index: 1;
+  transition: all 0.2s ease-in-out 0s;
+  background-color: #69e0ff;
+  height: 5px;
+  left: 55px;
+  width: 44px;
+  top: 0px;
+}
+.header .header__login {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  right: 210px;
+  height: 100%;
+  white-space: nowrap;
+  font-size: Arial, Helvetica, sans-serif;
+}
+.header .header__login .login__btn {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border: 0;
+  outline: none;
+  background: none;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ccc;
+  cursor: pointer;
+}
+.header .header__login .login__btn span {
+  margin: 0;
+  padding: 0;
+}
+.header .header__login .login__btn img {
+  margin-left: 18px;
+  width: 27px;
+  height: 27px;
+  opacity: 0.6;
+}
+.header .header__login .login__btn:hover {
+  color: white;
+}
+.header .header__login .login__btn:hover img {
+  opacity: 1;
+}
+.header .header_download {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="https://i.pinimg.com/originals/b3/f6/83/b3f6833e11dc9773067b44bc243d16bb.jpg" type="image/x-icon"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="contain-warp">
+        <div class="home">
+            <div class="header">
+                <div class="header__logo">
+                    <div class="audio-controller" style="transform: translateX(0px)">
+                        <img src="./img/sound-off.png" class="audio-controller-off">
+                        <audio loop='loop' autoplay='autoplay' class="bg-audio" src="./audio/main_theme.mp3" muted='muted'></audio>
+                    </div>
+                    <img src="./img/logo.png" alt="logo" height="100%" width="100%">
+                </div>
+
+                <div class="header__warp">
+                    <div class="header__navbar">
+                        <a href="#" class="header__navitem">HOME</a>
+                        <a href="#" class="header__navitem">NEWS</a>
+                        <a href="#" class="header__navitem">CHARACTERS</a>
+                        <div class="header__navitem header__navitem__more">
+                            <p>EXPLORE</p>
+                            <ul class="header__navitem__sublist">
+                                <li><a href="#">ABOUT GAME</a></li>
+                                <li><a href="#">TEYVAT</a></li>
+                                <li><a href="#">ITINERARY</a></li>
+                                <li><a href="#">MANGA</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="header__navitem">HoYoLAB</a>
+                        <a href="#" class="header__navitem">TOP-UP</a>
+                        <a href="#" class="header__navitem">REDEEM CODE</a>
+                    </div>                    
+                    <div class="top_squre"></div>
+                </div>
+
+                <div class="header__login">
+                    <button class="login__btn">
+                        <span>Log In</span>
+                        <img src="./img/login.png" alt="photo">
+                    </button>
+                </div>
+                <a href="#" class="header_download">
+                    <img src="./img/download-btn.png" alt="download-button">
+                </a>
+            </div>
+            <div class="home-container">
+                <div class="home-contain">
+                    <video src='./video/back-ground.mp4' muted='muted' loop='loop' autoplay='autoplay' class="bg-video"></video>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script>
+        var audioControler = document.querySelector(".audio-controller")
+        var audioSelector = document.querySelector(".bg-audio")
+        var imgSelector = document.querySelector(".audio-controller-off")
+
+        audioSelector.volume = 0.3
+
+        imgSelector.onclick = function () {
+            if (this.getAttribute("src") == "./img/sound-on.png") {
+                this.setAttribute("src", "./img/sound-off.png")
+                audioSelector.muted = true
+            } else {
+                this.setAttribute("src", "./img/sound-on.png")
+                audioSelector.muted = false
+            }
+        }
+    </script>
+</body>
+</html>
