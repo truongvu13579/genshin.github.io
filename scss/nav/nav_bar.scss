@@ -62,12 +62,12 @@ $font-size: 14px;
                 
                 &:hover{
                     opacity: 1;
-                    text-shadow: 2px 2px 8px rgb(105,224,255);
+                    text-shadow:0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
                 }
                 
                 &:nth-child(1){
                     opacity: 1;
-                    text-shadow: 2px 2px 8px rgb(105,224,255);
+                    text-shadow:0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
                 }
             }
 

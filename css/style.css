@@ -90,11 +90,11 @@ body {
 }
 .header .header__warp .header__navbar .header__navitem:hover {
   opacity: 1;
-  text-shadow: 2px 2px 8px #69e0ff;
+  text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
 }
 .header .header__warp .header__navbar .header__navitem:nth-child(1) {
   opacity: 1;
-  text-shadow: 2px 2px 8px #69e0ff;
+  text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
 }
 .header .header__warp .header__navbar .header__navitem__more::before {
   content: "";
