@@ -1,4 +1,14 @@
+@use './loading_screen/loading.scss';
 @use './site/body.scss';
-@use './site/footer.scss';
 @use './nav/nav_bar.scss';
 @use './site/first-view.scss';
+@use './site/second-view.scss';
+@use './site/third-view.scss';
+@use './site/footer.scss';
+
+
+@media screen and (max-width: 1920px) {
+    .home .city__list-item {
+    background-size: 1920px 260px;}
+    
+}

@@ -1,5 +1,7 @@
 *,*::before,*::after{
-    box-sizing: border-box;
+    box-sizing: border-box;    
+    margin: 0;
+    padding: 0;
 }
 
 html,body{
@@ -10,6 +12,11 @@ html,body{
 body{
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+section{
+    margin: 0;
+    padding: 0;
 }
 
 .home-container{
@@ -31,4 +38,20 @@ body{
             object-fit: cover;
         }
     }
+}
+
+.home{
+    display: none;
+    animation: opacity 1s linear;
+}
+
+
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+    
 }

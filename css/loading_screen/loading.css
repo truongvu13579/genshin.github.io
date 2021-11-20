@@ -1,0 +1,9 @@
+.loader {
+  display: block;
+  transform: display 3000ms ease-in;
+  background-color: cyan;
+  width: 100%;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=loading.css.map */

@@ -1,0 +1,263 @@
+$font-family:Arial, Helvetica, sans-serif;
+
+.footer{
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    min-width: 1280px;
+    background-color: #111;
+    margin: 0 auto;
+
+    .footer__top{
+        position: relative;
+        width: 1280px;
+        height: 52px;
+        line-height: 52px;
+        letter-spacing: 0;
+        font-size: 16px;
+        font-family: $font-family;
+        border-bottom: #1a1a1a solid 2px ;
+        color: #999;
+        left: 50%;
+        margin-left: -640px;
+
+        .footer__socialbar{
+            display: inline-block;
+            list-style-type: none;
+            height: 100%;
+            line-height: 100%;
+            margin-right: 250px;
+            margin-left: 10px;
+            vertical-align: center;
+
+            .footer__socialitem{
+                text-decoration: none;
+                color: #999;
+                float: left;
+                width: 32px;
+                height: 32px;
+                margin-top: 10px;
+                margin-right: 24px
+            }
+        }
+        .footer__topitem {
+            float: left;
+            width: 200px;
+            padding-left: 44px;
+            cursor: pointer;
+        }
+
+        .footer__language{            
+            position: relative;
+            float: right;
+            padding-left: 42px;
+            width: auto;
+            text-align: right;
+            margin-right: 10px;
+            background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjkzNkQ1OTY4NjAzRDExRTk5Qjk5RTNEMTZDRUM4M0JGIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjkzNkQ1OTY5NjAzRDExRTk5Qjk5RTNEMTZDRUM4M0JGIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTM2RDU5NjY2MDNEMTFFOTlCOTlFM0QxNkNFQzgzQkYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTM2RDU5Njc2MDNEMTFFOTlCOTlFM0QxNkNFQzgzQkYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4Rr88EAAACrElEQVR42oyVa2jNYRzHz/nvLJfcWomJvGHUFDYhNZYXQ0qROy8WOi5LRPFWFCXJXeeMaXKdMLEkhXJ5Qy6jKbQZc8tWFnPZGJ9fff/1eDrH8atP//N/nuf/fZ7f5fmdaCKRiKSwAPpBEUyEfBgA2fARnsE1uA6v4/H4r1QCvuXAErgEp6EMiiEPciEGhXAQbsO6ZDKZm0l4KByAcihIsWkn3ITpsApqYTtUIV6QTniIBOdF0lsUmqEBKmAmrIcR5h3io3xhc38rTIr820x0r/P+nfju5FmqnCQQH+gKz4Y5GURb4CK0+hOIX+CxFsZaiBDPMuH+sCKS2ZKwB2bIdd+OwjlYDsNjKqfR/yFcAuNVdgv/2jGZ7KJYD1JYp8ZUSqF9gF7QLYVwoZ474Ik3Z/Fd4HhSHKisHinDVhE13kfv4Ko2bYIj0O6c1g6y0dwHuygdVmEmPBieQjXcUSm5Cdug0yyDz7ogrll+4hrv1FjvmCojqoEOL+vPdXVb5Imd7osz3xPGOZtlu3X8FvpAlsauwANt0leJNTe7wgmod4TNg7vww/OiNVAi8oTZPdX1Pp2oXGHapNL0zS7MIf3+rXA0BupQFucJzuJ6xXaNdS8YpvcKdTr3crSpX1TrUBbWW4FiaNmeC92db37CKVVE2BanwXGtzXHEX6kpvVSOLptwozpaiSZ9a3CEzUbK9Xxv3RiV7DF4HCgulSq1zTDL++As7IJvTuusUbMPa7lIubCx3XjQHjah97BS8TwMq53S+QRbrHPp3Tzcpgtjoot5nNRcGaIv/H5cq4tQp2ZzHhbpulrtPpR3zUrQFGvwOshXmI/ojVDMv0X3lZilaoOTtVGT/gii6gdntKG977cchSdNJ2z2Rk2/SlVQooT1UKjatKZSsa6zmPoifwQYAKsPvcSdppPhAAAAAElFTkSuQmCC') no-repeat 0 17px;
+        }
+
+        .footer__language--list{
+            display: none;
+        }
+
+        .footer__language--title{
+            position: relative;
+            padding-right: 36px;
+            font-weight: normal;
+            font-size: 16px;
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                display: block;
+                margin-top: -4px;
+                width: 0;
+                height: 0;
+                border-bottom: 8px solid #333;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                transform-origin: center;
+                transform: rotate(-180deg);
+                transition: transform linear 0.2s;
+            }
+
+            &:hover::after{
+                transform: rotate(0);
+            }
+
+            &:active .footer__language--list{
+                display: block;
+            }
+        }
+
+        .footer__language--list{
+            position: absolute;
+            right: -10px;
+            top: -190px;
+            padding: 20px 0 20px 40px;
+            width: 510px;
+            height: 190px;
+            background: #222;
+            border-radius: 3px;
+            font-size: 0;
+            text-align: left;
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 100%;
+                list-style-type: none;
+
+                .footer__language--item{
+                    position: relative;
+                    width: calc(100% / 3);
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 18px;
+                    text-align: left;
+                }
+
+                .footer__item--active{
+                    color: #fff;
+                }
+
+            }
+
+            &::after{                
+                content: '';
+                position: absolute;
+                right: 73px;
+                bottom: -10px;
+                display: block;
+                width: 0;
+                height: 0;
+                border-top: 10px solid #222;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+            }
+        }
+    }
+
+    #footer__cdn{
+        .mihoyo-sea-footer{
+            background-color: #111;
+            padding: 30px 0 50px;
+
+            .footer-wrap{
+                width: 1000px;
+                margin: 0 auto;
+                padding: 0 12px;
+                color: #999;
+                box-sizing: border-box;
+
+                .footer-content{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    font-size: 16px;
+
+                    .footer-content__logo{
+                        display: flex;
+                        width: 430px;
+
+                        .logoimg{
+                            padding: 0 20px;
+                            flex: 1;
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+
+                            img{
+                                height: 60px;
+                            }
+                        }
+
+                        .game{
+                            position: relative;
+                            justify-content: flex-start;
+                            border: none;
+
+                            &::after{
+                                position: absolute;
+                                content: '';
+                                left: 10px;
+                                top: 25%;
+                                background-color: #bfbfbf;
+                                width: 1px;
+                                height: 50%;
+                            }
+                        }
+
+                    }
+
+                    .footer-content__info{
+                        width: 560px;
+                        margin-left: 40px;
+
+                        .links{
+                            margin-bottom: 5px;
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            .link{
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 16px;
+                                flex-shrink: 0;
+                                margin: 5px 0;
+                                text-decoration: none;
+                                color: #999;
+                                padding: 0 10px;
+                                border-left: 1px solid #fff;
+                                line-height: 1;
+
+                                &:hover{
+                                    text-decoration: underline;
+                                    color: #fff;
+                                }
+                            }
+                        }
+
+                        .copyright{
+                            padding: 6px 0;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 16px;
+                        }
+
+                        .extra-info{
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 14px;
+                            color: #7d7d7d;
+                            font-size: 14px;
+                            line-height: 20px;
+                            padding: 10px 0;
+                        }
+
+                        .footer-content__icons{
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 16px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            padding-top: 10px;
+                                a{
+                                    display: inline-block;
+                                    text-decoration: none;
+        
+                                    img{
+                                        border: none;
+                                        vertical-align: middle;
+                                        display: initial;
+                                    }
+                                }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

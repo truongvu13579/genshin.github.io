@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="https://i.pinimg.com/originals/b3/f6/83/b3f6833e11dc9773067b44bc243d16bb.jpg" type="image/x-icon"/>
     <title>Genshin Impact</title>
-    </style>
 </head>
 <body>
+        <div class="loader"></div>
         <div class="home">
             <div class="header">
                 <div class="header__logo">
@@ -54,7 +54,7 @@
 
             <div class="home-container">
                 <div class="home-contain">
-                    <video src='./video/back-ground.mp4' muted='muted' loop='loop' autoplay='autoplay' class="bg-video"></video>
+                    <video src='https://genshin.mihoyo.com/_nuxt/videos/3e78e80.mp4' muted='muted' loop='loop' autoplay='autoplay' class="bg-video"></video>
                 </div>
                 <div class="poster__sign">
                     <div class="poster__video--entry">
@@ -92,12 +92,183 @@
             </div>
 
             <section class="news">
-                
+                <h3>NEWS</h3>
+                <!-- <div class="news__main">
+                    <div class="swiper-container news__swiper swiper-container-initialized swiper-container-horizontal">
+                        <ul class="swiper-wrapper" style="transition-duration: 300ms; transform: translate3d(-2560px, 0px,0px);">
+                            <li class="swiper-slide swiper-slide-duplicate" style="width: 640px;">
+                                <a href="#" target="_blank" class="news__link">
+                                    <img src="https://uploadstatic-sea.mihoyo.com/contentweb/20211101/2021110110312078540.jpg" draggable="false" class="news__banner">
+                                </a>
+                            </li>
+                            <li class="swiper-slide swiper-slide-prev" style="width: 640px;">
+                                <a href="#" target="_blank" class="news__link">
+                                    <img src="https://uploadstatic-sea.mihoyo.com/contentweb/20211112/2021111220245922263.jpg" draggable="false" class="news__banner">
+                                </a>
+                            </li>
+                            <li class="swiper-slide swiper-slide-active" style="width: 640px;"> 
+                                <a href="#" target="_blank" class="news__link">
+                                    <img src="https://uploadstatic-sea.mihoyo.com/contentweb/20211112/2021111211010653643.jpg" draggable="false" class="news__banner">
+                                </a>
+                            </li>
+                            <li class="swiper-slide swiper-slide-next" style="width: 640px;">
+                                <a href="#" target="_blank" class="news__link">
+                                    <img src="https://uploadstatic-sea.mihoyo.com/contentweb/20211102/2021110211110364272.jpg" draggable="false" class="news__banner">
+                                </a>
+                            </li>
+                            <li class="swiper-slide" style="width: 640px;">
+                                <a href="#" target="_blank" class="news__link">
+                                    <img src="https://uploadstatic-sea.mihoyo.com/contentweb/20211102/2021110211110364272.jpg" draggable="false" class="news__banner">
+                                </a>
+                            </li>
+                            <li></li>
+                        </ul>
+                        <div class="swiper-pagination news__pager swiper-pagination-clickable swiper-pagination-bullets">
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                        </div>
+                        <span></span>
+                    </div>
+                    <div class="news__content">
+                        <ul class="news__tab__list">
+                            <li class="news__tab__item news__tab__item--active"></li>
+                        </ul>
+                        <ul class="news__list">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <a href="#" class="news__more">More</a>
+                    </div>
+                </div> -->
             </section>
+            <section class="city">
+                <ul class="city__list">
+                    <li class="city__list-item">
+                        <div class="city__list-bg mondstadt"></div>
+                        <a href="#">
+                            <p>"Mondstadt"</p>
+                        </a>
+                        <div class="city__list-char" style="background-image: url('https://uploadstatic-sea.mihoyo.com/contentweb/20210615/2021061518151058323.png');"></div>
+                    </li>
+                    <li class="city__list-item">
+                        <div class="city__list-bg liyue"></div>
+                        <a href="#">
+                            <p>"Liyue"</p>
+                        </a>
+                        <div class="city__list-char" style="background-image: url('https://uploadstatic-sea.mihoyo.com/contentweb/20210624/2021062410083822749.png');"></div>
+                    </li>
+                    <li class="city__list-item">
+                        <div class="city__list-bg inazuma"></div>
+                        <a href="#">
+                            <p>"Inazuma"</p>
+                        </a>
+                        <div class="city__list-char" style="background-image: url('https://uploadstatic-sea.mihoyo.com/contentweb/20210715/2021071515201245150.png');"></div>
+                    </li>
+                    <li class="city__list-item city__list-item--disable city__list-item3">
+                        <p>"Coming Soon"</p>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="footer">
+                <div class="footer__top">
+                    <div class="footer__socialbar">
+                        <a href="https://www.facebook.com/Genshinimpact/" target="_blank" class="footer__socialitem">
+                            <span class="icon-facebook"></span>
+                        </a>
+                        <a href="https://twitter.com/GenshinImpact" target="_blank" class="footer__socialitem">
+                            <span class="icon-twitter"></span>
+                        </a> 
+                        <a href="http://www.youtube.com/c/GenshinImpact" target="_blank" class="footer__socialitem">
+                            <span class="icon-youtube"></span>
+                        </a>
+                        <a href="https://www.instagram.com/genshinimpact/" target="_blank" class="footer__socialitem">
+                            <span class="icon-instagram"></span>
+                        </a>
+                        <a href="https://discord.gg/genshinimpact" target="_blank" class="footer__socialitem">
+                            <span class="icon-discord"></span>
+                        </a>
+                        <a href="https://www.reddit.com/r/Genshin_Impact" target="_blank" class="footer__socialitem">
+                            <span class="icon-reddit"></span>
+                        </a>
+                        <a href="https://www.hoyolab.com/home?lang=en-en&amp;utm_source=officialweb&amp;utm_medium=game&amp;utm_id=2" target="_blank" class="footer__socialitem">
+                            <span class="icon-HoYoLAB-Logo"></span>
+                        </a>
+                    </div>
+                    <div class="footer__topitem footer__language">
+                        <h2 class="footer__language--title">English</h2>
+                        <div class="footer__language--list">
+                            <ul>
+                                <li class="footer__language--item">中文（繁體</li>
+                                <li class="footer__language--item">Deutsch</li>
+                                <li class="footer__language--item footer__item--active">English</li>
+                                <li class="footer__language--item">Español</li>
+                                <li class="footer__language--item">Français</li>
+                                <li class="footer__language--item">Indonesia</li>
+                                <li class="footer__language--item">日本語</li>
+                                <li class="footer__language--item">한국어</li>
+                                <li class="footer__language--item">Português</li>
+                                <li class="footer__language--item">Pусский</li>
+                                <li class="footer__language--item">ภาษาไทย</li>
+                                <li class="footer__language--item">Tiếng Việt</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer__cdn">
+                    <div class="mihoyo-sea-footer">
+                        <div class="footer-wrap"> 
+                            <div class="footer-content">
+                                <div class="footer-content__logo">
+                                    <div class="logoimg">
+                                        <img src="https://uploadstatic-sea.mihoyo.com/hk4e/upload/officialsites/202004/mihoyo_1586770772_9709.png" alt="">
+                                    </div>
+                                    <div class="logoimg game">
+                                        <img src="https://uploadstatic-sea.mihoyo.com/hk4e/upload/officialsites/202004/GIEN_1587984203_6764.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="footer-content__info">
+                                    <div class="links">
+                                        <a class="link" href="https://genshin.mihoyo.com/en/company/privacy" target="_blank">Privacy Policy</a>
+                                        <a class="link" href="https://genshin.mihoyo.com/en/company/terms" target="_blank">Terms of Service</a>
+                                        <a class="link" href="https://genshin.mihoyo.com/en/company/about" target="_blank">About Us</a>
+                                        <a class="link" href="mailto:genshin_cs@mihoyo.com" target="_blank">Contact Us</a>
+                                    </div>
+                                    <div class="copyright">Copyright © 2020 miHoYo All Rights Reserved</div>
+                                    <div class="extra-info">"PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.</div>
+                                    <div class="footer-content__icons pic-wrap-dark pic-wrap">
+                                        <p>
+                                            <span style="color:rgba(125,125,125,1)">Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. All other trademarks are the property of their respective owners.</span>
+                                        </p>
+                                        <p>
+                                            <a href="https://pegi.info/" data-type="a" rel="noopener noreferrer nofollow" target="_blank">
+                                                <img src="https://webstatic-sea.mihoyo.com/upload/op-public/2021/03/02/647d16e8c7025d1ca1de95a17d264693_1896166264332371978.png" href="https://pegi.info/" style="border:none;vertical-align:middle;margin: 0 10px 0 0;"> 
+                                            </a>
+                                            <img src="https://webstatic-sea.mihoyo.com/upload/op-public/2021/03/02/5e80165e2b66ed85c4b230e50a2aba33_2358777062524763187.png" href="" style="border:none;vertical-align:middle;">
+                                        </p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>  
 
 
     
+    <script>
+        setTimeout(loading, 3000)
+        function loading() {
+            document.querySelector(".home").setAttribute("style", "display:block")
+            document.querySelector(".loader").setAttribute("style", "display:none")
+        }
+    </script>
     <script>
         var audioSelector = document.querySelector(".bg-audio")
         var imgSelector = document.querySelector(".audio-controller-off")

@@ -1,0 +1,70 @@
+.city{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .city__list{
+        overflow: hidden;
+
+        .city__list-item{
+            position: relative;
+            width: 100%;
+            height: 258px;
+            background: center no-repeat;
+            background-size: 100% auto;
+            cursor: pointer;
+            overflow: hidden;
+
+            &::before{
+                content: '';
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.4);
+            }
+
+            .city__list-bg{
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background:center no-repeat;
+                background-size: 100% auto;
+                transition: transform 0.4s 0s ease-out;
+            }
+
+            .mondstadt{
+                background-image: url("https://uploadstatic-sea.mihoyo.com/contentweb/20200211/2020021114275255981.jpg");
+            }
+
+            .liyue{
+                background-image: url("https://uploadstatic-sea.mihoyo.com/contentweb/20200526/2020052612372361982.jpg");
+            }
+            .inazuma{
+                background-image: url("https://uploadstatic-sea.mihoyo.com/contentweb/20210720/2021072015230536749.jpg");
+            }
+        }
+
+        .city__list-item3{
+            background-image: url('https://genshin.mihoyo.com/_nuxt/img/9a62be8.jpg');
+        }
+
+        .city__list-item--disable{
+            cursor: auto;
+        }
+
+    }
+    
+}
