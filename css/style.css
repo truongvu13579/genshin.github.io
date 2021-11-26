@@ -300,9 +300,34 @@ section {
   padding: 0;
   top: 0;
   right: 0;
-  width: 196px;
+  width: 185px;
   height: 66px;
   object-fit: cover;
+}
+
+.brightness {
+  filter: brightness(50%);
+  cursor: default;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video {
+  display: none;
+  position: absolute;
+  height: auto;
+  width: auto;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.video iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .poster__sign {
