@@ -41,6 +41,7 @@ html.dark body {
   background-size: 500px 62.5px;
   background-position-x: 0;
   animation: loading-bar 3.5s cubic-bezier(0.28, 0.11, 0.32, 1) forwards;
+  animation-delay: 1000ms;
 }
 @media screen and (max-width: 719px) {
   .loading-bar .loading-bar {
