@@ -52,6 +52,7 @@ html.dark body {
     background-size: $loading-img-width $loading-img-height;
     background-position-x: 0;
     animation: $animation;
+    animation-delay: 1000ms;
   }
 
   @media screen and (max-width: $mobile) {
